@@ -1,10 +1,10 @@
 var path = require('path');
 
 module.exports = {
-    entry: path.join(__dirname, 'srcjs', 'sparklineswidget.js'),
+    entry: path.join(__dirname, 'srcjs', 'sparklines.js'),
     output: {
         path: path.join(__dirname, 'inst', 'htmlwidgets'),
-        filename: 'sparklineswidget.js'
+        filename: 'sparklines.js'
     },
     module: {
         rules: [

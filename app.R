@@ -1,5 +1,5 @@
 library(shiny)
-library(sparklineswidget)
+library(sparklines)
 library(colourpicker)
 # devtools::install_github("hadley/shinySignals")
 library(shinySignals)

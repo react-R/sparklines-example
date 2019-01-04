@@ -1,10 +1,10 @@
-Package: sparklineswidget
-Title: What the Package Does (one line, title case)
+Package: sparklines
+Title: reactR HTMLWidget Example
 Version: 0.0.0.9000
-Authors@R: person("First", "Last", email = "first.last@example.com", role = c("aut", "cre"))
-Description: What the package does (one paragraph).
+Authors@R: person("Alan", "Dipert", email = "alan@rstudio.com", role = c("aut", "cre"))
+Description: Demonstrates adapting a React-based library (react-sparklines) into an htmlwidget.
 Depends: R (>= 3.5.1)
-License: What license is it under?
+License: MIT
 Encoding: UTF-8
 LazyData: true
 RoxygenNote: 6.1.1

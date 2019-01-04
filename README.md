@@ -1,4 +1,4 @@
-# react-sparklines HTMLWidget
+# sparklines HTMLWidget
 
 This example demonstrates creating an [htmlwidget](https://www.htmlwidgets.org/) wrapper around the [react-sparklines](http://borisyankov.github.io/react-sparklines/) library.
 
@@ -15,7 +15,7 @@ Building Javascript should work on macOS, Linux, and Windows. The following tool
 
 ## R Build Requirements
 
-You should install the parent `reactR` package if you haven't, as this widget depends on it.
+You should install the `reactR` package if you haven't, as this widget depends on it.
 
 ## Development Workflow
 

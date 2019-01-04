@@ -81,7 +81,7 @@
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = "./srcjs/sparklineswidget.js");
+/******/ 	return __webpack_require__(__webpack_require__.s = "./srcjs/sparklines.js");
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -2930,10 +2930,10 @@ module.exports = function (module) {
 
 /***/ }),
 
-/***/ "./srcjs/sparklineswidget.js":
-/*!***********************************!*\
-  !*** ./srcjs/sparklineswidget.js ***!
-  \***********************************/
+/***/ "./srcjs/sparklines.js":
+/*!*****************************!*\
+  !*** ./srcjs/sparklines.js ***!
+  \*****************************/
 /*! no exports provided */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -2972,4 +2972,4 @@ module.exports = window.reactR;
 /***/ })
 
 /******/ });
-//# sourceMappingURL=sparklineswidget.js.map
+//# sourceMappingURL=sparklines.js.map

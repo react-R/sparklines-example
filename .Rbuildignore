@@ -1,2 +1,3 @@
-^sparklineswidget\.Rproj$
+^sparklines\.Rproj$
 ^\.Rproj\.user$
+^node_modules$
