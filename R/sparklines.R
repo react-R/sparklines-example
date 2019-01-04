@@ -20,47 +20,47 @@ reference_line <- function(...) {
 #' @import htmlwidgets
 #'
 #' @export
-sparklineswidget <- function(data, ...) {
+sparklines <- function(data, ...) {
   htmlwidgets::createWidget(
-    'sparklineswidget',
+    'sparklines',
     reactR::reactData(reactR::component("Sparklines", c(list(data = data, ...)))),
     width = NULL,
     height = NULL,
-    package = 'sparklineswidget',
+    package = 'sparklines',
     elementId = NULL
   )
 }
 
-#' Shiny bindings for sparklineswidget
+#' Shiny bindings for sparklines
 #'
-#' Output and render functions for using sparklineswidget within Shiny
+#' Output and render functions for using sparklines within Shiny
 #' applications and interactive Rmd documents.
 #'
 #' @param outputId output variable to read from
 #' @param width,height Must be a valid CSS unit (like \code{'100\%'},
 #'   \code{'400px'}, \code{'auto'}) or a number, which will be coerced to a
 #'   string and have \code{'px'} appended.
-#' @param expr An expression that generates a sparklineswidget
+#' @param expr An expression that generates a sparklines
 #' @param env The environment in which to evaluate \code{expr}.
 #' @param quoted Is \code{expr} a quoted expression (with \code{quote()})? This
 #'   is useful if you want to save an expression in a variable.
 #'
-#' @name sparklineswidget-shiny
+#' @name sparklines
 #'
 #' @export
-sparklineswidgetOutput <- function(outputId, width = '100%', height = '400px'){
-  htmlwidgets::shinyWidgetOutput(outputId, 'sparklineswidget', width, height, package = 'sparklineswidget')
+sparklinesOutput <- function(outputId, width = '100%', height = '400px'){
+  htmlwidgets::shinyWidgetOutput(outputId, 'sparklines', width, height, package = 'sparklines')
 }
 
-#' @rdname sparklineswidget-shiny
+#' @rdname sparklines
 #' @export
-renderSparklineswidget <- function(expr, env = parent.frame(), quoted = FALSE) {
+renderSparklines <- function(expr, env = parent.frame(), quoted = FALSE) {
   if (!quoted) { expr <- substitute(expr) } # force quoted
-  htmlwidgets::shinyRenderWidget(expr, sparklineswidgetOutput, env, quoted = TRUE)
+  htmlwidgets::shinyRenderWidget(expr, sparklinesOutput, env, quoted = TRUE)
 }
 
 # Magical
-sparklineswidget_html <- function(id, style, class, ...) {
+sparklines_html <- function(id, style, class, ...) {
   tagList(
     reactR::html_dependency_corejs(),
     reactR::html_dependency_react(),
