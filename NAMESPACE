@@ -2,8 +2,8 @@
 
 export(curve)
 export(reference_line)
-export(renderSparklineswidget)
-export(sparklineswidget)
-export(sparklineswidgetOutput)
+export(renderSparklines)
+export(sparklines)
+export(sparklinesOutput)
 export(spots)
 import(htmlwidgets)

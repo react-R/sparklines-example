@@ -62,7 +62,6 @@ renderSparklines <- function(expr, env = parent.frame(), quoted = FALSE) {
 # Magical
 sparklines_html <- function(id, style, class, ...) {
   tagList(
-    reactR::html_dependency_corejs(),
     reactR::html_dependency_react(),
     reactR::html_dependency_reacttools(),
     tags$span(id = id, class = class)

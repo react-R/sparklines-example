@@ -2945,7 +2945,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var reactR__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(reactR__WEBPACK_IMPORTED_MODULE_1__);
 
 
-Object(reactR__WEBPACK_IMPORTED_MODULE_1__["reactWidget"])('sparklineswidget', 'output', react_sparklines__WEBPACK_IMPORTED_MODULE_0__);
+Object(reactR__WEBPACK_IMPORTED_MODULE_1__["reactWidget"])('sparklines', 'output', react_sparklines__WEBPACK_IMPORTED_MODULE_0__);
 
 /***/ }),
 

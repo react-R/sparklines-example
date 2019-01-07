@@ -6,7 +6,7 @@ library(shinySignals)
 
 ui <- fluidPage(
   titlePanel("React Sparklines"),
-  sparklineswidgetOutput('sparklines'),
+  sparklinesOutput('sparklines'),
   colourInput("color_curve", "Curve color", "#253e56"),
   colourInput("color_spots", "Spots color", "#56b45d")
 )
@@ -19,8 +19,8 @@ server <- function(input, output, session) {
 
   data <- reducePast(fps(1), nextWindow, nextWindow())
 
-  output$sparklines <- renderSparklineswidget(
-    sparklineswidget(data = data(),
+  output$sparklines <- renderSparklines(
+    sparklines(data = data(),
       curve(color = input$color_curve),
       spots(style = list(fill = input$color_spots)),
       reference_line(type = "avg")
